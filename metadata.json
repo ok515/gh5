@@ -1,0 +1,6 @@
+{
+  "name": "Pecmi",
+  "description": "Pecmi - Modern graphic design, typography studio, photo editor, and layer composer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
