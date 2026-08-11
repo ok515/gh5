@@ -43,7 +43,6 @@
 
 # 5. AdMob (Google Mobile Ads)
 -keep class com.google.android.gms.ads.** { *; }
--keepinterface com.google.android.gms.ads.** { *; }
 -keep class com.google.android.gms.common.** { *; }
 
 # 6. Security & Core Models Preservation
