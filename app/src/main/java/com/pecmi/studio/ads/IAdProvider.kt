@@ -18,10 +18,6 @@ interface IAdProvider {
         onDismissedOrFailed: () -> Unit
     )
 
-    fun showInterstitialAd(
-        activity: Activity,
-        onAdClosed: () -> Unit
-    )
 
     @Composable
     fun BannerAdView(modifier: Modifier)

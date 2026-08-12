@@ -54,9 +54,8 @@ android {
       isShrinkResources = true
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
 
-      buildConfigField("String", "ADMOB_BANNER_ID", "\"${System.getenv("ADMOB_BANNER_ID") ?: "ca-app-pub-3940256099942544/6300978111"}\"")
-      buildConfigField("String", "ADMOB_INTERSTITIAL_ID", "\"${System.getenv("ADMOB_INTERSTITIAL_ID") ?: "ca-app-pub-3940256099942544/1033173712"}\"")
-      buildConfigField("String", "ADMOB_REWARDED_ID", "\"${System.getenv("ADMOB_REWARDED_ID") ?: "ca-app-pub-3940256099942544/5224354917"}\"")
+      buildConfigField("String", "ADMOB_BANNER_ID", "\"${System.getenv("ADMOB_BANNER_ID")}\"")
+      buildConfigField("String", "ADMOB_REWARDED_ID", "\"${System.getenv("ADMOB_REWARDED_ID")}\"")
 
       val releaseSigning = signingConfigs.getByName("release")
       if (releaseSigning.storeFile != null && releaseSigning.storeFile!!.exists()) {
@@ -68,7 +67,6 @@ android {
     debug {
       signingConfig = signingConfigs.getByName("debug")
       buildConfigField("String", "ADMOB_BANNER_ID", "\"ca-app-pub-3940256099942544/6300978111\"")
-      buildConfigField("String", "ADMOB_INTERSTITIAL_ID", "\"ca-app-pub-3940256099942544/1033173712\"")
       buildConfigField("String", "ADMOB_REWARDED_ID", "\"ca-app-pub-3940256099942544/5224354917\"")
     }
   }

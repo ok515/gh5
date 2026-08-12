@@ -36,13 +36,6 @@ object AdManager {
         getProvider(activity).showRewardedAd(activity, onRewarded, onDismissedOrFailed)
     }
 
-    fun showInterstitialAd(
-        activity: Activity,
-        onAdClosed: () -> Unit
-    ) {
-        getProvider(activity).showInterstitialAd(activity, onAdClosed)
-    }
-
     val BANNER_TEST_AD_UNIT_ID: String
         get() = AdConfig.Gms.BANNER_AD_UNIT_ID
 

@@ -11,8 +11,6 @@ object AdConfig {
     object Gms {
         val BANNER_AD_UNIT_ID: String
             get() = BuildConfig.ADMOB_BANNER_ID
-        val INTERSTITIAL_AD_UNIT_ID: String
-            get() = BuildConfig.ADMOB_INTERSTITIAL_ID
         val REWARDED_AD_UNIT_ID: String
             get() = BuildConfig.ADMOB_REWARDED_ID
     }
